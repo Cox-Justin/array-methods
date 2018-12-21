@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <p>Reverse the Array by Clicking the Button</p>
+        <button type="button" onclick="reverseArray()">Reverse</button>
+
+        <p id="characters"></p> <!--This will be used to display the data in the array before and after the reverse -->
+        <script>
+            let bros = ["Mario", "Luigi", "Wario", "Waluigi"]; // data to reverse
+            document.getElementById("characters").innerHTML = bros; // display the data before the reverse
+
+            function reverseArray() {
+                bros.reverse(); // reverese the array using the js array method
+                document.getElementById("characters").innerHTML = bros; // display the reversed array
+            }
+        </script>
+    </body>
+</html>
